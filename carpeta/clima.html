@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aolicacion de API de clima</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100wh;
+            display: grid;
+            height: 100vh;
+            place-items: center;
+            background-color: aqua;
+        }
+        .container{
+            width: 500px;
+            text-align: center ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #right input {
+            background: none;
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid black;
+            margin: 20px;
+
+        }
+         
+        #right input:active {
+        
+        }
+
+        #right button {
+            width: 50%;
+            border: none;
+            background-color: blueviolet;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="left">
+            <h1>Clima Actual</h1>
+            <hr>
+            <h2>Ciudad</h2>
+            <h3>18°C</h3>
+        </div>
+        <div id="right">
+            <h1>Busca el clima de tu Ciudad</h1>
+            <hr>
+            <input type="text" name="city" id="city" placeholder="Ciudad"><br>
+            <button id="btnBuscar">Buscar 🔍</button>
+
+        </div>
+    </div>
+    <script src="/carpeta/appclima.js"></script>
+    
+</body>
+</html>
